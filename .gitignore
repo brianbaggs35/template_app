@@ -51,3 +51,6 @@ vite.config.js
 /coverage
 spec/examples.txt
 
+# Vitest
+/coverage/frontend
+
