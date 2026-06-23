@@ -47,3 +47,7 @@ app/frontend/**/*.js
 vite.config.js
 *.d.ts.map
 
+# Test artifacts
+/coverage
+spec/examples.txt
+
