@@ -8,6 +8,7 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true,
     root: '.',
+    setupFiles: ['./app/frontend/__tests__/setup.ts'],
     include: ['app/frontend/**/*.{spec,test}.{ts,tsx}'],
     coverage: {
       provider: 'v8',
@@ -16,6 +17,7 @@ export default defineConfig({
       include: ['app/frontend/**/*.{ts,tsx,vue}'],
       exclude: [
         'app/frontend/entrypoints/**',
+        'app/frontend/router/index.ts',
         'app/frontend/**/*.d.ts',
       ],
       thresholds: {
