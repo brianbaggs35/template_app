@@ -81,7 +81,7 @@ jobs:
           bundler-cache: true
 
       - name: Set up database
-        run: bin/rails db:schema:load
+        run: bin/rails db:migrate
 
       - name: Run RSpec
         run: bundle exec rspec

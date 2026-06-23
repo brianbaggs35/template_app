@@ -9,7 +9,7 @@ end
 SimpleCov.start "rails" do
   formatter SimpleCov::Formatter::MultiFormatter.new([
     SimpleCov::Formatter::HTMLFormatter,
-    SimpleCov::Formatter::LcovFormatter,
+    SimpleCov::Formatter::LcovFormatter
   ])
 
   add_filter "/spec/"
