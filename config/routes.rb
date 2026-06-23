@@ -1,9 +1,16 @@
 Rails.application.routes.draw do
+  # Devise — model-only, all HTML routes skipped (SPA handles auth UI)
+  devise_for :users, skip: :all
+
   get "up" => "rails/health#show", as: :rails_health_check
 
   namespace :api do
     namespace :v1 do
-      # API routes go here
+      post "auth/sign_in",  to: "auth#create"
+      delete "auth/sign_out", to: "auth#destroy"
+      get "auth/me",        to: "auth#show"
+
+      get "dashboard", to: "dashboard#show"
     end
   end
 
