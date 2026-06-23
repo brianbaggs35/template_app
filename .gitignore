@@ -41,3 +41,9 @@ node_modules
 # https://vitejs.dev/guide/env-and-mode.html#env-files
 *.local
 
+# TypeScript compiled output (Vite handles compilation; these are not committed)
+app/frontend/**/*.js
+!app/frontend/**/*.config.js
+vite.config.js
+*.d.ts.map
+
