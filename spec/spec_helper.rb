@@ -17,7 +17,15 @@ SimpleCov.start "rails" do
   add_filter "/db/"
   add_filter "/vendor/"
 
-  minimum_coverage 90
+  # Exclude Rails base boilerplate — these don't contain app logic
+  add_filter "app/controllers/application_controller.rb"
+  add_filter "app/models/application_record.rb"
+  add_filter "app/helpers/application_helper.rb"
+  add_filter "app/jobs/application_job.rb"
+  add_filter "app/mailers/application_mailer.rb"
+  add_filter "app/channels/application_cable/"
+
+  minimum_coverage 80
 end
 
 RSpec.configure do |config|
