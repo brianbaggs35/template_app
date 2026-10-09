@@ -411,7 +411,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  brakeman
+  brakeman (~> 8.0.5)
   bundler-audit
   debug
   devise
