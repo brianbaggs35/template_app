@@ -6,26 +6,26 @@ A barebones Rails + Vue + TypeScript template with authentication. Fork this rep
 
 | Layer | Technology |
 |-------|-----------|
-| Ruby | 4.0.5 |
-| Rails | 8.1.3 |
-| Authentication | Devise 5 |
+| Ruby | 4.0.7 |
+| Rails | 8.1.4 |
+| Authentication | Devise 5.0.4 |
 | Database | PostgreSQL 16 |
-| Asset pipeline | Propshaft |
-| Frontend bundler | Vite 8 (via vite_rails) |
-| Frontend framework | Vue 3.5 |
-| State management | Pinia 3 |
-| Router | vue-router 5 |
-| UI components | PrimeVue 4.5 (Aura theme) |
-| Language | TypeScript 6 |
-| Ruby tests | RSpec 7 + SimpleCov (80% minimum) |
-| JS tests | Vitest 4 + @vitest/coverage-v8 (80% minimum) |
-| Test factories | FactoryBot + Faker |
-| Matchers | Shoulda Matchers 6 |
+| Asset pipeline | Propshaft 1.3.2 |
+| Frontend bundler | Vite 8.3.4 (via vite_rails 3.11.1) |
+| Frontend framework | Vue 3.5.43 |
+| State management | Pinia 4.0.3 |
+| Router | vue-router 5.4.0 |
+| UI components | PrimeVue 4.5.5 (Aura theme) |
+| Language | TypeScript 6.0.3 |
+| Ruby tests | RSpec 8.0.4 + SimpleCov 1.3.2 (80% minimum) |
+| JS tests | Vitest 5.0.3 + @vitest/coverage-v8 5.0.3 (80% minimum) |
+| Test factories | FactoryBot 6.6.0 + Faker 3.8.0 |
+| Matchers | Shoulda Matchers 8.0.1 |
 
 ## Prerequisites
 
-- Ruby 4.0.5 (managed via rbenv)
-- Node 22
+- Ruby 4.0.7 (managed via rbenv)
+- Node 24 (Updated from 22)
 - PostgreSQL 16
 
 ## Setup
