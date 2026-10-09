@@ -4,7 +4,7 @@ function csrfToken(): string {
 
 export function updateCsrfToken(token: string): void {
   const meta = document.querySelector<HTMLMetaElement>('meta[name="csrf-token"]')
-  if (meta) meta.content = token
+  if (meta) {meta.content = token}
 }
 
 type HttpMethod = 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE'
